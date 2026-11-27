@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<head>
+    <title>The HTML Form</title>
+</head>
+<body bgcolor="#98F5E1">
+
+    <form action="#" method="POST"<>
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" value="Khayle Ainsley"><br><br>
+
+            <label for="mname">Middle Name:</label><br>
+            <input type="text" id="mname" name="mname" value="Catipon"><br><br>
+
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" value="Bausas"><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Academic Year</legend>
+            
+            <label for="grade">Grade Level:</label><br>
+            <input type="text" id="grade" name="grade" value="Grade 9"><br><br>
+
+            <label for="section">Section:</label><br>
+            <input type="text" id="section" name="" value="Edelweiss"><br><br>
+
+            <label for="schoolyear">School Year:</label><br>
+            <input type="text" id="schoolyear" name="" value="2026-2027"><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Individual Preferences</legend>
+            
+            <label for="food">Favorite Food:</label><br>
+            <input type="text" id="food" name="" value="Fries"><br><br>
+
+            <label for="color">Favorite Color:</label><br>
+            <input type="text" id="color" name="" value="pink and green"><br><br>
+
+            <label for="person">Favorite Person:</label><br>
+            <input type="text" id="person" name="" value="Jemima"><br>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Proceed">
+
+    </form>
+
+<fieldset style="background-color: #ffe5e5;">
+
+<b style="color: darkblue;">Sex:</b><br>
+<input type="radio" name="sex" value="male">
+<span style="color: brown;">Male</span>
+
+<input type="radio" name="sex" value="female">
+<span style="color: green;">Female</span>
+
+<br><br>
+
+<p style="color: purple;"><b>Things you like to do:</b></p>
+
+<input type="checkbox" name="hobby" value="sports">
+<span style="color: goldenrod;">Sports</span>
+
+<input type="checkbox" name="hobby" value="music">
+<span style="color: deeppink;">Music</span>
+
+<input type="checkbox" name="hobby" value="art">
+<span style="color: teal;">Art</span>
+
+<input type="checkbox" name="hobby" value="sleeping">
+<span style="color: brown;">Sleeping</span>
+
+<input type="checkbox" name="hobby" value="going out">
+<span style="color: blue;">Going Out</span>
+
+<br><br>
+
+<label style="color: darkgreen;"><b>Dream Country:</b></label><br>
+<select name="country">
+<option>South Korea</option>
+<option>Japan</option>
+<option>Italy</option>
+<option>Canada</option>
+<option>France</option>
+</select>
+
+<br><br>
+
+<label style="color: brown;"><b>Chocolate</b></label><br>
+<select name="chocolate">
+<option>Dark Chocolate</option>
+<option>Milk Chocolate</option>
+<option>White Chocolate</option>
+<option>Caramel Chocolate</option>
+<option>Hazelnut Chocolate</option>
+</select>
+
+<br><br>
+
+<label style="color: crimson;"><b>Snacks/Chips:</b></label><br>
+<select name="snacks" size="4">
+<option>Loaded</option>
+<option>Cheezy</option>
+<option>Chiz Curls</option>
+<option>Roller Coaster</option>
+<option>Mr. Chips</option>
+<option>Super Crunch</option>
+<option>Potato Fries</option>
+<option>Snacku</option>
+</select>
+
+<br><br>
+
+<input type="submit" value="Save Changes">
+
+<br><br>
+
+<label for="Philippines">Where do you live in CALABARZON:</label><br>
+<input list="Philippines" id="province" name="province">
+
+<datalist id="Philippines">
+<option value="Cavite">
+<option value="Laguna">
+<option value="Batangas">
+<option value="Rizal">
+<option value="Quezon">
+</datalist>
+
+<br><br>
+
+<label for="comment">Type your comment/suggestion here:</label><br>
+<textarea id="comment" name="comment" rows="10" cols="30"></textarea>
+
+<br><br>
+
+<button type="button" onclick="alert('Student Information')">Press this button</button>
+
+
+<br><br>
+
+
+
+<br>
+
+<fieldset style="background-color: #ffe5e5;">
+<legend>Data Protection</legend>
+
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" placeholder="Enter your email"><br>
+
+<label for="username">Username:</label><br>
+<input type="text" id="username" name="username" required><br>
+
+<label for="pwd">Password:</label><br>
+<input type="password" id="pwd" name="password" required>
+<input type="reset" value="Reset">
+
+</fieldset>
+
+<br>
+
+<fieldset style="background-color: #ffe5e5;">
+<legend>Birthday</legend>
+
+<label for="birthday">Date of Birth:</label>
+<input type="date" id="birthday" name="birthday"><br>
+
+<label for="family">How many are you in the family:</label>
+<input type="number" id="family" name="family" min="2" max="20">
+
+</fieldset>
+
+<br>
+
+<label for="myfile">Upload a Profile Picture:</label><br>
+<input type="file" id="myfile" name="myfile" accept="image/*" required>
+  <br><br>
+<input type="submit" value="Save Changes">
+<br><br>
+
+</form>
+
+</body>
+</html>

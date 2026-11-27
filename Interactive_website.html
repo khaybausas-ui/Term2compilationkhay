@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Hometown Showcase - Nasugbu | 9-EDELWEISS</title>
+<style>
+body{margin:0;font-family:Arial;background:#F5F1E8}
+.top{background:#B33A0E;padding:14px;text-align:center;position:sticky;top:0;z-index:10}
+.top h1{color:#fff;font-size:22px;margin:0 0 10px}
+.top button{background:#fff;color:#B33A0E;font-weight:bold;font-size:14px;padding:8px 14px;border-radius:20px;margin:3px;border:none;cursor:pointer;transition:0.3s}
+.top button:hover{background:#FFD166;transform:scale(1.1)}
+.top button.active{background:#FFD166}
+.page{display:none;animation:fade 0.5s}
+.page.active{display:block}
+.box{border:3px solid #B33A0E;border-radius:12px;padding:20px;margin:20px;background:#fff;text-align:center;transition:0.3s}
+.box:hover{transform:translateY(-5px)}
+.title{text-align:center;color:#B33A0E;font-size:22px;font-weight:900;margin:18px 10px 8px}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:0 12px}
+.card{border:3px solid #B33A0E;border-radius:12px;padding:8px;background:#fff;text-align:center;transition:0.3s}
+.card:hover{transform:scale(1.03)}
+.card img{width:100%;height:115px;object-fit:cover;border-radius:10px}
+.vbox{border:3px solid #B33A0E;border-radius:12px;padding:18px;margin:20px;background:#212121;text-align:center}
+.vbox p{color:#fff;margin:0 0 8px}
+.vbox video{width:100%;border-radius:10px}
+.gwrap{border:3px solid #B33A0E;border-radius:12px;padding:15px;margin:20px;background:#FFF3E0;text-align:center}
+.gpic{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.gpic div{border:2px solid #B33A0E;border-radius:10px;padding:5px;background:#fff}
+.gpic img{width:100%;height:80px;object-fit:cover;border-radius:8px}
+.gpic p{font-size:11px;margin:5px 0 0}
+.footer{background:#B33A0E;color:#fff;text-align:center;padding:12px}
+.member{border:3px solid #B33A0E;border-radius:10px;padding:16px;margin:12px;background:#FFF8E1;text-align:left}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.float{animation:float 3s infinite}
+</style>
+</head>
+<body>
+<div class="top">
+  <h1>Our Hometown Showcase - Nasugbu</h1>
+  <button id="btn-home" class="active" onclick="showPage('home')">HOME</button>
+  <button id="btn-about" onclick="showPage('about')">ABOUT</button>
+  <button id="btn-gallery" onclick="showPage('gallery')">GALLERY</button>
+  <button id="btn-contact" onclick="showPage('contact')">CONTACT</button>
+</div>
+
+<div id="home" class="page active">
+  <div class="box">
+    <h2>Welcome to Nasugbu, Batangas!</h2>
+    <p class="float"><b>Discover the Traditional Delicacies of Nasugbu!</b></p>
+    <p>Our website is about <b>Traditional Delicacies (Food) in Nasugbu, Batangas.</b></p>
+    <p>Nasugbu is famous for its delicious foods. From hot Lomi to savory Bulalo, every dish tells the story of our hometown.</p>
+    <p><b>9-EDELWEISS - GROUP 2</b></p>
+  </div>
+  <div class="box">
+    <h3>Try Our Lomi Batangas!</h3>
+    <p>Delicious, hot, and loved by Batanguenos! It has thick soup, fresh noodles, tender meat, and a rich egg.</p>
+    <img src="Lomi.jpg" style="width:100%;height:190px;object-fit:cover;border-radius:10px;" alt="Lomi Batangas">
+  </div>
+  <div class="box">
+    <h3>Members & Assigned Parts</h3>
+    <p><b>HOME — Precious Aliena Oriondo</b></p>
+    <p><b>ABOUT — Khayley Bausas</b></p>
+    <p><b>GALLERY — Yossef Umandal</b></p>
+    <p><b>CONTACT — Marc Efren Villaflor</b></p>
+  </div>
+</div>
+
+<div id="about" class="page">
+  <div class="box">
+    <h2>About Our Project</h2>
+    <p>This website is our Final Project for <b>Our Hometown Showcase.</b></p>
+    <p>Our group is <b>9-EDELWEISS — GROUP 2.</b></p>
+    <p>Our chosen topic is <b>Traditional Delicacies (Food) in Nasugbu.</b></p>
+    <p>We chose Foods because Nasugbu has some of the most delicious and famous dishes in the province of Batangas.</p>
+  </div>
+  <div class="box">
+    <h3>What is Our Goal?</h3>
+    <p>Our goal is to show that the food in Nasugbu is not only delicious, but also a cherished part of our culture and tradition. In every dish, there is a story. In every home-cooked meal, there is love.</p>
+  </div>
+  <div class="box">
+    <h3>What Foods Can You Taste in Nasugbu?</h3>
+    <p>Lomi Batangas, Sinigang na Baboy, Palabok, Bulalo, Native Kakanin, and Tapang Taal.</p>
+    <p>These are the most loved and iconic flavors you will find in Nasugbu and across Batangas!</p>
+  </div>
+</div>
+
+<div id="gallery" class="page">
+  <div class="title">6 Photos of Traditional Delicacies in Nasugbu</div>
+  <div class="gal">
+    <div class="card">
+      <img src="Lomi.jpg" alt="Lomi Batangas">
+      <b>Lomi Batangas</b>
+      <p style="font-size:12px;">Thick hot soup with fresh noodles, meat, and egg — a Batangas classic!</p>
+    </div>
+    <div class="card">
+      <img src="sinigang.jpg" alt="Sinigang">
+      <b>Sinigang</b>
+      <p style="font-size:12px;">Warm, sour, and savory soup — a comfort food favorite nationwide.</p>
+    </div>
+    <div class="card">
+      <img src="palabok.jpg" alt="Palabok">
+      <b>Palabok</b>
+      <p style="font-size:12px;">Rice noodles with rich orange sauce, shrimp, chicharon, and egg.</p>
+    </div>
+    <div class="card">
+      <img src="Tapsilog.jpg" alt="Tapang Taal">
+      <b>Tapang Taal</b>
+      <p style="font-size:12px;">Cured beef, garlic rice, and fried egg — the best breakfast combo!</p>
+    </div>
+    <div class="card">
+      <img src="kakanin.jpg" alt="Kakanin">
+      <b>Native Kakanin</b>
+      <p style="font-size:12px;">Sweet rice cakes like Puto, Suman, and Bibingka — perfect desserts!</p>
+    </div>
+    <div class="card">
+      <img src="bulalo.jpg" alt="Bulalo">
+      <b>Bulalo</b>
+      <p style="font-size:12px;">Rich beef shank soup with corn and vegetables — Nasugbu's pride!</p>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="page">
+  <div class="box">
+    <h2>Get In Touch!</h2>
+    <p>We hope you enjoyed exploring the delicious flavors of Nasugbu, Batangas!</p>
+    <p>If you have questions or want to learn more about our hometown's delicacies, feel free to reach out.</p>
+  </div>
+  <div class="box">
+    <h3>Contact Us</h3>
+    <p><b>School Year:</b> 2025–2026</p>
+    <p><b>Section:</b> 9-Edelweiss — Group 2</p>
+    <p><b>Location:</b> Nasugbu, Batangas, Philippines</p>
+    <p style="margin-top:15px;font-style:italic;">Thank you for visiting our showcase! 🧡</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>© 2026 9-Edelweiss Group 2 | Our Hometown Showcase — Nasugbu, Batangas</p>
+</div>
+
+<script>
+function showPage(pageName) {
+  // Hide all pages
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(page => page.classList.remove('active'));
+  
+  // Remove active class from all buttons
+  const buttons = document.querySelectorAll('.top button');
+  buttons.forEach(btn => btn.classList.remove('active'));
+  
+  // Show selected page and activate its button
+  document.getElementById(pageName).classList.add('active');
+  document.getElementById('btn-' + pageName).classList.add('active');
+}
+</script>
+
+</body>
+</html>
